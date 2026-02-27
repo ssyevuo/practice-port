@@ -1,0 +1,128 @@
+:root {
+    --red: #A82323;
+    --cream: #FEFFD3;
+    --light-green: #BCD9A2;
+    --dark-green: #6D9E51;
+    --text-dark: #333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: var(--cream);
+    line-height: 1.6;
+    color: var(--text-dark);
+}
+
+header {
+    background-color: var(--dark-green);
+    padding: 60px 40px;
+    color: var(--cream);
+    margin:0 auto;
+    max-width: 1000px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 { 
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+header p {
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    color: var(--red);
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 3px solid var(--light-green);
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills li {
+   padding: 12px 24px;
+   color: var(--dark-green);
+   background-color: var(--light-green);
+   border-radius: 25px;
+   font-weight: 600;
+   transition: all 0.3s ease;
+   cursor: pointer;
+}
+
+.skills li:hover {
+    background-color: var(--dark-green);
+    color: var(--cream);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.projects article {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.projects article:hover {
+    background-color: var(--red);
+    color: var(--cream);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(168, 35, 35, 0.3);
+    border-color: var(--red);
+}
+
+.projects article h3 {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+footer {
+    background-color: var(--dark-green);
+    padding: 40px;
+    color: var(--cream);
+    margin:0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+footer strong {
+    color: var(--light-green);
+}
